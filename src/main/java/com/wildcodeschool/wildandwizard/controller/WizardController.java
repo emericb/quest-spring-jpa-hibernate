@@ -53,7 +53,6 @@ public class WizardController {
     public String deleteWizard(@RequestParam Long id) {
 
         repository.deleteById(id);
-
         return "redirect:/wizards";
     }
 }
